@@ -1,0 +1,73 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+   backdrop-filter: blur(5px);
+  background-image: url(../images/bg.png);
+}
+.log{
+  transition: all 0.3s;
+  border-radius: 7px;
+  background-image: url(../images/bg.png);
+  position: relative;
+  width: 400px;
+  height: 500px;
+  background-color: pink;
+  margin: 50px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+.log p{
+  top: 25px;
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  height: 80px;
+  width: 100%;
+  line-height: 80px;
+  text-align: center;
+}
+.log .user{
+  position: absolute;
+  bottom: 0;
+  height: 390px;
+  width: 100%;
+}
+.log .user div{
+  margin-top:37px ;
+  height: 65px; 
+   line-height: 65px;
+}
+.log .user div:nth-child(-n+5){
+  text-align: center;
+}
+.log .user div input{
+   text-indent: 12px; 
+  border-radius: 7px;
+    height: 30px;
+    width: 300px;
+}
+
+.log .user div input:focus {
+  border-color: #007BFF; 
+  outline: none;
+}
+.log .user div button{
+   height: 30px;
+   width: 300px;
+  border-radius: 7px;
+}
+.log .user div button:hover {
+  background-color: skyblue; 
+}
+#change{
+  color: white;
+  font-size: medium;
+  text-align: center;
+}
+#change a:visited{
+  color: wheat;
+}
+#change a:active{
+  color: black;
+}

@@ -1,0 +1,103 @@
+/* 全局样式重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  margin: 0 auto;
+  width: 100%;
+  height: 80px;
+}
+
+header p {
+  margin-right: 40px;
+  line-height: 80px;
+  top: 50%;
+  margin-top: -40px;
+  color: aqua;
+  font-size: 50px;
+  position: absolute;
+   white-space: nowrap; 
+  /*不换行 */
+   text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+}
+.scroll-container {
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
+  height: 100%;
+  overflow: hidden; /* 隐藏溢出的内容 */
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll-container p {
+  animation: scroll 10s linear infinite; /*设置逐帧动画  动画名称 时长  动画速度均匀 无线播放*/
+}
+.scroll-container p:nth-child(2) {
+  right: 0;
+}
+/*给文字添加模糊效果*/
+.scroll-container p:hover {
+  filter: blur(3px);
+  transition: filter 0.3s ease;
+}
+
+section{
+  width: 100%;
+  height: 500px;
+}
+.logo{
+  left: 50%;
+  margin-left: -600px;
+  position: relative;
+  width: 1200px;
+  height: 100%;
+}
+.logo img{
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+   top: -100%; 
+    /* 新增旋转动画 */
+ animation: fall 2s ease-out forwards, rotate 3s linear 1s infinite;
+}
+/* 定义落下动画 */
+@keyframes fall {
+  to {
+    top: 50%; /* 落到当前位置 */
+    margin-top:-200px;
+  }
+}
+/* 定义旋转动画 */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.register{
+  width: 600px;
+  height: 200px;
+  position: absolute;
+  margin-top: 250px;
+  left: 50%;
+  margin-left:-300px;
+}
+.register p{
+  font-size: 35px;
+  text-align: center;
+  color: aquamarine;
+}

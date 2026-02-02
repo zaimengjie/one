@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+   backdrop-filter: blur(5px); /* 添加背景模糊效果 */
+  background-image: url(../images/bg.png);
+}
+.register{
+  position: relative;
+  border-radius: 7px;
+  background-image: url(../images/bg.png);
+  position: relative;
+  width: 400px;
+  height: 500px;
+  background-color: pink;
+  margin: 50px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+  transition: all 0.5s;
+}
+.register p{
+  top: 0px;
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  height: 80px;
+  width: 100%;
+  line-height: 80px;
+  text-align: center;
+}
+.register .user{
+  position: absolute;
+  bottom: 0;
+  height: 390px;
+  width: 100%;
+  top: 70px;
+}
+.register .user div{
+  height: 65px; 
+   line-height: 65px;
+}
+.register .user div:nth-child(-n+5){
+  text-align: center;
+}
+.register .user div input{
+  text-indent: 12px;
+  border-radius: 7px;
+    height: 30px;
+    width: 300px;
+}
+.register .user div{
+  position: relative;
+}
+ #yanzhengma{
+  text-decoration: none;
+  font-size: 15px;
+    height: 30px;
+    width: 130px;
+    left: 53%;
+    position: absolute;
+    /* background-color: pink; */
+    line-height: 30px;
+    top: 20px;
+    color: #27ba9b;
+}
+.register .user div input:focus {
+  border-color: #007BFF; /* 输入框聚焦时的边框颜色 */
+  outline: none;
+}
+.register .user div button{
+   height: 30px;
+   width: 300px;
+  border-radius: 7px;
+  margin-left: 49px;
+}
+.register .user div button:hover {
+  background-color: skyblue; /* 按钮悬停时的背景颜色 */
+}
+#change{
+  margin-top: -19px;
+  color: white;
+  font-size: medium;
+  text-align: center;
+}
+#change a:visited{
+  color: wheat;
+}
+#change a:active{
+  color: black;
+}
